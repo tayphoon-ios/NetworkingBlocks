@@ -7,43 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		73D239A11F7A260500ECC686 /* NetworkingBlocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D239971F7A260500ECC686 /* NetworkingBlocks.framework */; };
+		665C69518337AA929FCF80D5 /* Pods_NetworkingBlocksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082B97F3935AFA76E921DF29 /* Pods_NetworkingBlocksTests.framework */; };
 		73D239A61F7A260500ECC686 /* NetworkingBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239A51F7A260500ECC686 /* NetworkingBlocksTests.m */; };
-		73D239A81F7A260500ECC686 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D2399A1F7A260500ECC686 /* NetworkingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239F11F7A29F100ECC686 /* TCChainableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C41F7A29F100ECC686 /* TCChainableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239F31F7A29F100ECC686 /* TCChainableOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239F51F7A29F100ECC686 /* TCChainableOperationOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C61F7A29F100ECC686 /* TCChainableOperationOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239F71F7A29F100ECC686 /* TCServerResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CA1F7A29F100ECC686 /* TCServerResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239F91F7A29F100ECC686 /* TCServerResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239CB1F7A29F100ECC686 /* TCServerResponseModel.m */; };
+		73D239FB1F7A29F100ECC686 /* TCCommonNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CC1F7A29F100ECC686 /* TCCommonNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D239FD1F7A29F100ECC686 /* TCCommonNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239CD1F7A29F100ECC686 /* TCCommonNetworkClient.m */; };
+		73D239FF1F7A29F100ECC686 /* TCNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CE1F7A29F100ECC686 /* TCNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A011F7A29F100ECC686 /* TCRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D01F7A29F100ECC686 /* TCRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A031F7A29F100ECC686 /* TCRestRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D11F7A29F100ECC686 /* TCRestRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A051F7A29F100ECC686 /* TCRestRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D21F7A29F100ECC686 /* TCRestRequestBuilder.m */; };
+		73D23A071F7A29F100ECC686 /* TCJSONResponseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D41F7A29F100ECC686 /* TCJSONResponseDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A091F7A29F100ECC686 /* TCJSONResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D51F7A29F100ECC686 /* TCJSONResponseDeserializer.m */; };
+		73D23A0B1F7A29F100ECC686 /* TCResponseDeserialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D61F7A29F100ECC686 /* TCResponseDeserialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A0D1F7A29F100ECC686 /* TCResponseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D71F7A29F100ECC686 /* TCResponseDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A0F1F7A29F100ECC686 /* TCResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D81F7A29F100ECC686 /* TCResponseDeserializer.m */; };
+		73D23A111F7A29F100ECC686 /* TCResponseMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239DA1F7A29F100ECC686 /* TCResponseMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A131F7A29F100ECC686 /* TCCompoundOperationBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239DC1F7A29F100ECC686 /* TCCompoundOperationBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A151F7A29F100ECC686 /* TCCompoundOperationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239DD1F7A29F100ECC686 /* TCCompoundOperationBuilder.m */; };
+		73D23A171F7A29F100ECC686 /* TCAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E01F7A29F100ECC686 /* TCAsyncOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A191F7A29F100ECC686 /* TCAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E11F7A29F100ECC686 /* TCAsyncOperation.m */; };
+		73D23A1B1F7A29F100ECC686 /* TCCompoundOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E21F7A29F100ECC686 /* TCCompoundOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A1D1F7A29F100ECC686 /* TCCompoundOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E31F7A29F100ECC686 /* TCCompoundOperation.m */; };
+		73D23A1F1F7A29F100ECC686 /* TCNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E51F7A29F100ECC686 /* TCNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A211F7A29F100ECC686 /* TCNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E61F7A29F100ECC686 /* TCNetworkOperation.m */; };
+		73D23A231F7A29F100ECC686 /* TCRequestBuilderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E81F7A29F100ECC686 /* TCRequestBuilderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A251F7A29F100ECC686 /* TCRequestBuilderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E91F7A29F100ECC686 /* TCRequestBuilderOperation.m */; };
+		73D23A271F7A29F100ECC686 /* TCResponseDeserializationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239EB1F7A29F100ECC686 /* TCResponseDeserializationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A291F7A29F100ECC686 /* TCResponseDeserializationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EC1F7A29F100ECC686 /* TCResponseDeserializationOperation.m */; };
+		73D23A2B1F7A29F100ECC686 /* TCResponseMappingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239EE1F7A29F100ECC686 /* TCResponseMappingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A2D1F7A29F100ECC686 /* TCResponseMappingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */; };
+		73D23A2E1F7A2AC300ECC686 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D239A71F7A260500ECC686 /* Info.plist */; };
+		73D23A301F7A2C2000ECC686 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A3F1F7A2E3500ECC686 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A401F7A2EB800ECC686 /* TCServerResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CA1F7A29F100ECC686 /* TCServerResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A411F7A2EB800ECC686 /* TCCommonNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CC1F7A29F100ECC686 /* TCCommonNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A421F7A2EB800ECC686 /* TCNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CE1F7A29F100ECC686 /* TCNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A431F7A2EB800ECC686 /* TCRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D01F7A29F100ECC686 /* TCRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A441F7A2EB800ECC686 /* TCRestRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D11F7A29F100ECC686 /* TCRestRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A451F7A2EB800ECC686 /* TCJSONResponseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D41F7A29F100ECC686 /* TCJSONResponseDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A461F7A2EB800ECC686 /* TCResponseDeserialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D61F7A29F100ECC686 /* TCResponseDeserialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A471F7A2EB800ECC686 /* TCResponseDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239D71F7A29F100ECC686 /* TCResponseDeserializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A481F7A2EB800ECC686 /* TCResponseMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239DA1F7A29F100ECC686 /* TCResponseMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A491F7A2EB800ECC686 /* TCCompoundOperationBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239DC1F7A29F100ECC686 /* TCCompoundOperationBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4A1F7A2EB800ECC686 /* TCAsyncOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E01F7A29F100ECC686 /* TCAsyncOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4B1F7A2EB800ECC686 /* TCCompoundOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E21F7A29F100ECC686 /* TCCompoundOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4C1F7A2EB800ECC686 /* TCNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E51F7A29F100ECC686 /* TCNetworkOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4D1F7A2EB800ECC686 /* TCRequestBuilderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239E81F7A29F100ECC686 /* TCRequestBuilderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4E1F7A2EB800ECC686 /* TCResponseDeserializationOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239EB1F7A29F100ECC686 /* TCResponseDeserializationOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A4F1F7A2EB800ECC686 /* TCResponseMappingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239EE1F7A29F100ECC686 /* TCResponseMappingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A501F7A2EB800ECC686 /* TCChainableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C41F7A29F100ECC686 /* TCChainableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A511F7A2EB800ECC686 /* TCChainableOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A521F7A2EB800ECC686 /* TCChainableOperationOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C61F7A29F100ECC686 /* TCChainableOperationOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D23A531F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D23A541F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework */; };
+		73D23A551F7A2F8D00ECC686 /* TCServerResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239CB1F7A29F100ECC686 /* TCServerResponseModel.m */; };
+		73D23A561F7A2F8D00ECC686 /* TCCommonNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239CD1F7A29F100ECC686 /* TCCommonNetworkClient.m */; };
+		73D23A571F7A2F8D00ECC686 /* TCRestRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D21F7A29F100ECC686 /* TCRestRequestBuilder.m */; };
+		73D23A581F7A2F8D00ECC686 /* TCJSONResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D51F7A29F100ECC686 /* TCJSONResponseDeserializer.m */; };
+		73D23A591F7A2F8D00ECC686 /* TCResponseDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239D81F7A29F100ECC686 /* TCResponseDeserializer.m */; };
+		73D23A5A1F7A2F8D00ECC686 /* TCCompoundOperationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239DD1F7A29F100ECC686 /* TCCompoundOperationBuilder.m */; };
+		73D23A5B1F7A2F8D00ECC686 /* TCAsyncOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E11F7A29F100ECC686 /* TCAsyncOperation.m */; };
+		73D23A5C1F7A2F8D00ECC686 /* TCCompoundOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E31F7A29F100ECC686 /* TCCompoundOperation.m */; };
+		73D23A5D1F7A2F8D00ECC686 /* TCNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E61F7A29F100ECC686 /* TCNetworkOperation.m */; };
+		73D23A5E1F7A2F8D00ECC686 /* TCRequestBuilderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E91F7A29F100ECC686 /* TCRequestBuilderOperation.m */; };
+		73D23A5F1F7A2F8D00ECC686 /* TCResponseDeserializationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EC1F7A29F100ECC686 /* TCResponseDeserializationOperation.m */; };
+		73D23A601F7A2F8D00ECC686 /* TCResponseMappingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */; };
+		A5F987BBED792D2C7FC813BF /* Pods_NetworkingBlocks_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		73D239A21F7A260500ECC686 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73D2398E1F7A260500ECC686 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 73D239961F7A260500ECC686;
-			remoteInfo = NetworkingBlocks;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		73D239971F7A260500ECC686 /* NetworkingBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73D2399A1F7A260500ECC686 /* NetworkingBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingBlocks.h; sourceTree = "<group>"; };
-		73D2399B1F7A260500ECC686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		082B97F3935AFA76E921DF29 /* Pods_NetworkingBlocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBlocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F2B4AA10D6DD7D82AA220C /* Pods-NetworkingBlocks iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks iOS/Pods-NetworkingBlocks iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5499735C9B0AD5CBBFD13CAF /* Pods_NetworkingBlocks_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBlocks_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686C07BA5D54B66A861A1CBC /* Pods-NetworkingBlocks macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks macOS/Pods-NetworkingBlocks macOS.release.xcconfig"; sourceTree = "<group>"; };
+		70B7E138864E74C82FDA16D1 /* Pods-NetworkingBlocks macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks macOS/Pods-NetworkingBlocks macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		73D239A01F7A260500ECC686 /* NetworkingBlocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingBlocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D239A51F7A260500ECC686 /* NetworkingBlocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingBlocksTests.m; sourceTree = "<group>"; };
 		73D239A71F7A260500ECC686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D239B61F7A264E00ECC686 /* NetworkingBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D239BF1F7A29B500ECC686 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingBlocks.h; sourceTree = "<group>"; };
+		73D239C41F7A29F100ECC686 /* TCChainableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperation.h; sourceTree = "<group>"; };
+		73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperationDelegate.h; sourceTree = "<group>"; };
+		73D239C61F7A29F100ECC686 /* TCChainableOperationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperationOutput.h; sourceTree = "<group>"; };
+		73D239CA1F7A29F100ECC686 /* TCServerResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCServerResponseModel.h; sourceTree = "<group>"; };
+		73D239CB1F7A29F100ECC686 /* TCServerResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCServerResponseModel.m; sourceTree = "<group>"; };
+		73D239CC1F7A29F100ECC686 /* TCCommonNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCommonNetworkClient.h; sourceTree = "<group>"; };
+		73D239CD1F7A29F100ECC686 /* TCCommonNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCommonNetworkClient.m; sourceTree = "<group>"; };
+		73D239CE1F7A29F100ECC686 /* TCNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNetworkClient.h; sourceTree = "<group>"; };
+		73D239D01F7A29F100ECC686 /* TCRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRequestBuilder.h; sourceTree = "<group>"; };
+		73D239D11F7A29F100ECC686 /* TCRestRequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRestRequestBuilder.h; sourceTree = "<group>"; };
+		73D239D21F7A29F100ECC686 /* TCRestRequestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRestRequestBuilder.m; sourceTree = "<group>"; };
+		73D239D41F7A29F100ECC686 /* TCJSONResponseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCJSONResponseDeserializer.h; sourceTree = "<group>"; };
+		73D239D51F7A29F100ECC686 /* TCJSONResponseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCJSONResponseDeserializer.m; sourceTree = "<group>"; };
+		73D239D61F7A29F100ECC686 /* TCResponseDeserialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResponseDeserialization.h; sourceTree = "<group>"; };
+		73D239D71F7A29F100ECC686 /* TCResponseDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResponseDeserializer.h; sourceTree = "<group>"; };
+		73D239D81F7A29F100ECC686 /* TCResponseDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResponseDeserializer.m; sourceTree = "<group>"; };
+		73D239DA1F7A29F100ECC686 /* TCResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResponseMapper.h; sourceTree = "<group>"; };
+		73D239DC1F7A29F100ECC686 /* TCCompoundOperationBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCompoundOperationBuilder.h; sourceTree = "<group>"; };
+		73D239DD1F7A29F100ECC686 /* TCCompoundOperationBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCompoundOperationBuilder.m; sourceTree = "<group>"; };
+		73D239E01F7A29F100ECC686 /* TCAsyncOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAsyncOperation.h; sourceTree = "<group>"; };
+		73D239E11F7A29F100ECC686 /* TCAsyncOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAsyncOperation.m; sourceTree = "<group>"; };
+		73D239E21F7A29F100ECC686 /* TCCompoundOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCompoundOperation.h; sourceTree = "<group>"; };
+		73D239E31F7A29F100ECC686 /* TCCompoundOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCompoundOperation.m; sourceTree = "<group>"; };
+		73D239E51F7A29F100ECC686 /* TCNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNetworkOperation.h; sourceTree = "<group>"; };
+		73D239E61F7A29F100ECC686 /* TCNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNetworkOperation.m; sourceTree = "<group>"; };
+		73D239E81F7A29F100ECC686 /* TCRequestBuilderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRequestBuilderOperation.h; sourceTree = "<group>"; };
+		73D239E91F7A29F100ECC686 /* TCRequestBuilderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRequestBuilderOperation.m; sourceTree = "<group>"; };
+		73D239EB1F7A29F100ECC686 /* TCResponseDeserializationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResponseDeserializationOperation.h; sourceTree = "<group>"; };
+		73D239EC1F7A29F100ECC686 /* TCResponseDeserializationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResponseDeserializationOperation.m; sourceTree = "<group>"; };
+		73D239EE1F7A29F100ECC686 /* TCResponseMappingOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResponseMappingOperation.h; sourceTree = "<group>"; };
+		73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResponseMappingOperation.m; sourceTree = "<group>"; };
+		73D23A371F7A2DE200ECC686 /* NetworkingBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D23A541F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NetworkingBlocks_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9647EAC50128007306933629 /* Pods-NetworkingBlocksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBlocks_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF77AFC09DFBCD73C862777C /* Pods-NetworkingBlocks iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks iOS/Pods-NetworkingBlocks iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DEB05BA0E1A808A2B4B928EA /* Pods-NetworkingBlocksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		73D239931F7A260500ECC686 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		73D2399D1F7A260500ECC686 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D239A11F7A260500ECC686 /* NetworkingBlocks.framework in Frameworks */,
+				665C69518337AA929FCF80D5 /* Pods_NetworkingBlocksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D239B21F7A264E00ECC686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F987BBED792D2C7FC813BF /* Pods_NetworkingBlocks_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D23A331F7A2DE200ECC686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D23A531F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,14 +163,17 @@
 				73D239991F7A260500ECC686 /* NetworkingBlocks */,
 				73D239A41F7A260500ECC686 /* NetworkingBlocksTests */,
 				73D239981F7A260500ECC686 /* Products */,
+				D3E79D06FCF5B71EAA0C81A4 /* Pods */,
+				D8F31D0F4B1C98C2C92FE013 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		73D239981F7A260500ECC686 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73D239971F7A260500ECC686 /* NetworkingBlocks.framework */,
 				73D239A01F7A260500ECC686 /* NetworkingBlocksTests.xctest */,
+				73D239B61F7A264E00ECC686 /* NetworkingBlocks.framework */,
+				73D23A371F7A2DE200ECC686 /* NetworkingBlocks.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +181,11 @@
 		73D239991F7A260500ECC686 /* NetworkingBlocks */ = {
 			isa = PBXGroup;
 			children = (
-				73D2399A1F7A260500ECC686 /* NetworkingBlocks.h */,
-				73D2399B1F7A260500ECC686 /* Info.plist */,
+				73D239C71F7A29F100ECC686 /* CoreComponents */,
+				73D239DB1F7A29F100ECC686 /* OperationBuilders */,
+				73D239DE1F7A29F100ECC686 /* Operations */,
+				73D239C31F7A29F100ECC686 /* Protocols */,
+				73D239BE1F7A299500ECC686 /* Supporting Files */,
 			);
 			path = NetworkingBlocks;
 			sourceTree = "<group>";
@@ -86,55 +199,297 @@
 			path = NetworkingBlocksTests;
 			sourceTree = "<group>";
 		};
+		73D239BE1F7A299500ECC686 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73D239BF1F7A29B500ECC686 /* Info.plist */,
+				73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73D239C31F7A29F100ECC686 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				73D239C41F7A29F100ECC686 /* TCChainableOperation.h */,
+				73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */,
+				73D239C61F7A29F100ECC686 /* TCChainableOperationOutput.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		73D239C71F7A29F100ECC686 /* CoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				73D239C81F7A29F100ECC686 /* NetworkClients */,
+				73D239CF1F7A29F100ECC686 /* RequestBuilder */,
+				73D239D31F7A29F100ECC686 /* ResponseDeserializer */,
+				73D239D91F7A29F100ECC686 /* ResponseMapper */,
+			);
+			path = CoreComponents;
+			sourceTree = "<group>";
+		};
+		73D239C81F7A29F100ECC686 /* NetworkClients */ = {
+			isa = PBXGroup;
+			children = (
+				73D239C91F7A29F100ECC686 /* Models */,
+				73D239CC1F7A29F100ECC686 /* TCCommonNetworkClient.h */,
+				73D239CD1F7A29F100ECC686 /* TCCommonNetworkClient.m */,
+				73D239CE1F7A29F100ECC686 /* TCNetworkClient.h */,
+			);
+			path = NetworkClients;
+			sourceTree = "<group>";
+		};
+		73D239C91F7A29F100ECC686 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73D239CA1F7A29F100ECC686 /* TCServerResponseModel.h */,
+				73D239CB1F7A29F100ECC686 /* TCServerResponseModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73D239CF1F7A29F100ECC686 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				73D239D01F7A29F100ECC686 /* TCRequestBuilder.h */,
+				73D239D11F7A29F100ECC686 /* TCRestRequestBuilder.h */,
+				73D239D21F7A29F100ECC686 /* TCRestRequestBuilder.m */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		73D239D31F7A29F100ECC686 /* ResponseDeserializer */ = {
+			isa = PBXGroup;
+			children = (
+				73D239D41F7A29F100ECC686 /* TCJSONResponseDeserializer.h */,
+				73D239D51F7A29F100ECC686 /* TCJSONResponseDeserializer.m */,
+				73D239D61F7A29F100ECC686 /* TCResponseDeserialization.h */,
+				73D239D71F7A29F100ECC686 /* TCResponseDeserializer.h */,
+				73D239D81F7A29F100ECC686 /* TCResponseDeserializer.m */,
+			);
+			path = ResponseDeserializer;
+			sourceTree = "<group>";
+		};
+		73D239D91F7A29F100ECC686 /* ResponseMapper */ = {
+			isa = PBXGroup;
+			children = (
+				73D239DA1F7A29F100ECC686 /* TCResponseMapper.h */,
+			);
+			path = ResponseMapper;
+			sourceTree = "<group>";
+		};
+		73D239DB1F7A29F100ECC686 /* OperationBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				73D239DC1F7A29F100ECC686 /* TCCompoundOperationBuilder.h */,
+				73D239DD1F7A29F100ECC686 /* TCCompoundOperationBuilder.m */,
+			);
+			path = OperationBuilders;
+			sourceTree = "<group>";
+		};
+		73D239DE1F7A29F100ECC686 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				73D239DF1F7A29F100ECC686 /* BaseOperations */,
+				73D239E41F7A29F100ECC686 /* NetworkOperation */,
+				73D239E71F7A29F100ECC686 /* RequestBuilderOperation */,
+				73D239EA1F7A29F100ECC686 /* ResponseDeserializationOperation */,
+				73D239ED1F7A29F100ECC686 /* ResponseMappingOperation */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		73D239DF1F7A29F100ECC686 /* BaseOperations */ = {
+			isa = PBXGroup;
+			children = (
+				73D239E01F7A29F100ECC686 /* TCAsyncOperation.h */,
+				73D239E11F7A29F100ECC686 /* TCAsyncOperation.m */,
+				73D239E21F7A29F100ECC686 /* TCCompoundOperation.h */,
+				73D239E31F7A29F100ECC686 /* TCCompoundOperation.m */,
+			);
+			path = BaseOperations;
+			sourceTree = "<group>";
+		};
+		73D239E41F7A29F100ECC686 /* NetworkOperation */ = {
+			isa = PBXGroup;
+			children = (
+				73D239E51F7A29F100ECC686 /* TCNetworkOperation.h */,
+				73D239E61F7A29F100ECC686 /* TCNetworkOperation.m */,
+			);
+			path = NetworkOperation;
+			sourceTree = "<group>";
+		};
+		73D239E71F7A29F100ECC686 /* RequestBuilderOperation */ = {
+			isa = PBXGroup;
+			children = (
+				73D239E81F7A29F100ECC686 /* TCRequestBuilderOperation.h */,
+				73D239E91F7A29F100ECC686 /* TCRequestBuilderOperation.m */,
+			);
+			path = RequestBuilderOperation;
+			sourceTree = "<group>";
+		};
+		73D239EA1F7A29F100ECC686 /* ResponseDeserializationOperation */ = {
+			isa = PBXGroup;
+			children = (
+				73D239EB1F7A29F100ECC686 /* TCResponseDeserializationOperation.h */,
+				73D239EC1F7A29F100ECC686 /* TCResponseDeserializationOperation.m */,
+			);
+			path = ResponseDeserializationOperation;
+			sourceTree = "<group>";
+		};
+		73D239ED1F7A29F100ECC686 /* ResponseMappingOperation */ = {
+			isa = PBXGroup;
+			children = (
+				73D239EE1F7A29F100ECC686 /* TCResponseMappingOperation.h */,
+				73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */,
+			);
+			path = ResponseMappingOperation;
+			sourceTree = "<group>";
+		};
+		D3E79D06FCF5B71EAA0C81A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17F2B4AA10D6DD7D82AA220C /* Pods-NetworkingBlocks iOS.debug.xcconfig */,
+				BF77AFC09DFBCD73C862777C /* Pods-NetworkingBlocks iOS.release.xcconfig */,
+				70B7E138864E74C82FDA16D1 /* Pods-NetworkingBlocks macOS.debug.xcconfig */,
+				686C07BA5D54B66A861A1CBC /* Pods-NetworkingBlocks macOS.release.xcconfig */,
+				DEB05BA0E1A808A2B4B928EA /* Pods-NetworkingBlocksTests.debug.xcconfig */,
+				9647EAC50128007306933629 /* Pods-NetworkingBlocksTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8F31D0F4B1C98C2C92FE013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D23A541F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework */,
+				5499735C9B0AD5CBBFD13CAF /* Pods_NetworkingBlocks_iOS.framework */,
+				9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */,
+				082B97F3935AFA76E921DF29 /* Pods_NetworkingBlocksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		73D239941F7A260500ECC686 /* Headers */ = {
+		73D239B31F7A264E00ECC686 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D239A81F7A260500ECC686 /* NetworkingBlocks.h in Headers */,
+				73D23A0B1F7A29F100ECC686 /* TCResponseDeserialization.h in Headers */,
+				73D23A071F7A29F100ECC686 /* TCJSONResponseDeserializer.h in Headers */,
+				73D23A231F7A29F100ECC686 /* TCRequestBuilderOperation.h in Headers */,
+				73D23A011F7A29F100ECC686 /* TCRequestBuilder.h in Headers */,
+				73D23A1B1F7A29F100ECC686 /* TCCompoundOperation.h in Headers */,
+				73D23A111F7A29F100ECC686 /* TCResponseMapper.h in Headers */,
+				73D23A131F7A29F100ECC686 /* TCCompoundOperationBuilder.h in Headers */,
+				73D23A0D1F7A29F100ECC686 /* TCResponseDeserializer.h in Headers */,
+				73D23A031F7A29F100ECC686 /* TCRestRequestBuilder.h in Headers */,
+				73D23A2B1F7A29F100ECC686 /* TCResponseMappingOperation.h in Headers */,
+				73D239F51F7A29F100ECC686 /* TCChainableOperationOutput.h in Headers */,
+				73D23A301F7A2C2000ECC686 /* NetworkingBlocks.h in Headers */,
+				73D23A271F7A29F100ECC686 /* TCResponseDeserializationOperation.h in Headers */,
+				73D239FF1F7A29F100ECC686 /* TCNetworkClient.h in Headers */,
+				73D239F31F7A29F100ECC686 /* TCChainableOperationDelegate.h in Headers */,
+				73D23A171F7A29F100ECC686 /* TCAsyncOperation.h in Headers */,
+				73D23A1F1F7A29F100ECC686 /* TCNetworkOperation.h in Headers */,
+				73D239F11F7A29F100ECC686 /* TCChainableOperation.h in Headers */,
+				73D239F71F7A29F100ECC686 /* TCServerResponseModel.h in Headers */,
+				73D239FB1F7A29F100ECC686 /* TCCommonNetworkClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D23A341F7A2DE200ECC686 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D23A3F1F7A2E3500ECC686 /* NetworkingBlocks.h in Headers */,
+				73D23A401F7A2EB800ECC686 /* TCServerResponseModel.h in Headers */,
+				73D23A411F7A2EB800ECC686 /* TCCommonNetworkClient.h in Headers */,
+				73D23A421F7A2EB800ECC686 /* TCNetworkClient.h in Headers */,
+				73D23A431F7A2EB800ECC686 /* TCRequestBuilder.h in Headers */,
+				73D23A441F7A2EB800ECC686 /* TCRestRequestBuilder.h in Headers */,
+				73D23A451F7A2EB800ECC686 /* TCJSONResponseDeserializer.h in Headers */,
+				73D23A461F7A2EB800ECC686 /* TCResponseDeserialization.h in Headers */,
+				73D23A471F7A2EB800ECC686 /* TCResponseDeserializer.h in Headers */,
+				73D23A481F7A2EB800ECC686 /* TCResponseMapper.h in Headers */,
+				73D23A491F7A2EB800ECC686 /* TCCompoundOperationBuilder.h in Headers */,
+				73D23A4A1F7A2EB800ECC686 /* TCAsyncOperation.h in Headers */,
+				73D23A4B1F7A2EB800ECC686 /* TCCompoundOperation.h in Headers */,
+				73D23A4C1F7A2EB800ECC686 /* TCNetworkOperation.h in Headers */,
+				73D23A4D1F7A2EB800ECC686 /* TCRequestBuilderOperation.h in Headers */,
+				73D23A4E1F7A2EB800ECC686 /* TCResponseDeserializationOperation.h in Headers */,
+				73D23A4F1F7A2EB800ECC686 /* TCResponseMappingOperation.h in Headers */,
+				73D23A501F7A2EB800ECC686 /* TCChainableOperation.h in Headers */,
+				73D23A511F7A2EB800ECC686 /* TCChainableOperationDelegate.h in Headers */,
+				73D23A521F7A2EB800ECC686 /* TCChainableOperationOutput.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		73D239961F7A260500ECC686 /* NetworkingBlocks */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73D239AB1F7A260500ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks" */;
-			buildPhases = (
-				73D239921F7A260500ECC686 /* Sources */,
-				73D239931F7A260500ECC686 /* Frameworks */,
-				73D239941F7A260500ECC686 /* Headers */,
-				73D239951F7A260500ECC686 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NetworkingBlocks;
-			productName = NetworkingBlocks;
-			productReference = 73D239971F7A260500ECC686 /* NetworkingBlocks.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		73D2399F1F7A260500ECC686 /* NetworkingBlocksTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D239AE1F7A260500ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocksTests" */;
 			buildPhases = (
+				CC5879B3D514DBD17A561BB7 /* [CP] Check Pods Manifest.lock */,
 				73D2399C1F7A260500ECC686 /* Sources */,
 				73D2399D1F7A260500ECC686 /* Frameworks */,
 				73D2399E1F7A260500ECC686 /* Resources */,
+				3F2AE7B0EBA0297E1F6AD167 /* [CP] Embed Pods Frameworks */,
+				65A5013122C3DA2ED9658D74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				73D239A31F7A260500ECC686 /* PBXTargetDependency */,
 			);
 			name = NetworkingBlocksTests;
 			productName = NetworkingBlocksTests;
 			productReference = 73D239A01F7A260500ECC686 /* NetworkingBlocksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73D239B51F7A264E00ECC686 /* NetworkingBlocks macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D239BB1F7A264E00ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks macOS" */;
+			buildPhases = (
+				7EE84D2B24AD6E1D51D56611 /* [CP] Check Pods Manifest.lock */,
+				73D239B11F7A264E00ECC686 /* Sources */,
+				73D239B21F7A264E00ECC686 /* Frameworks */,
+				73D239B31F7A264E00ECC686 /* Headers */,
+				73D239B41F7A264E00ECC686 /* Resources */,
+				351081AC18FEE782619ADF47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetworkingBlocks macOS";
+			productName = "NetworkingBlocks macOS";
+			productReference = 73D239B61F7A264E00ECC686 /* NetworkingBlocks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73D23A361F7A2DE200ECC686 /* NetworkingBlocks iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D23A3C1F7A2DE200ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks iOS" */;
+			buildPhases = (
+				D8F219287070E7185282B753 /* [CP] Check Pods Manifest.lock */,
+				73D23A321F7A2DE200ECC686 /* Sources */,
+				73D23A331F7A2DE200ECC686 /* Frameworks */,
+				73D23A341F7A2DE200ECC686 /* Headers */,
+				73D23A351F7A2DE200ECC686 /* Resources */,
+				560B679576FE960BDB490942 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NetworkingBlocks iOS";
+			productName = "NetworkingBlocks iOS";
+			productReference = 73D23A371F7A2DE200ECC686 /* NetworkingBlocks.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,14 +497,19 @@
 		73D2398E1F7A260500ECC686 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TC;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Tayphoon;
 				TargetAttributes = {
-					73D239961F7A260500ECC686 = {
+					73D2399F1F7A260500ECC686 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					73D2399F1F7A260500ECC686 = {
+					73D239B51F7A264E00ECC686 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					73D23A361F7A2DE200ECC686 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -167,21 +527,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73D239961F7A260500ECC686 /* NetworkingBlocks */,
+				73D23A361F7A2DE200ECC686 /* NetworkingBlocks iOS */,
+				73D239B51F7A264E00ECC686 /* NetworkingBlocks macOS */,
 				73D2399F1F7A260500ECC686 /* NetworkingBlocksTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		73D239951F7A260500ECC686 /* Resources */ = {
+		73D2399E1F7A260500ECC686 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73D2399E1F7A260500ECC686 /* Resources */ = {
+		73D239B41F7A264E00ECC686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D23A2E1F7A2AC300ECC686 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D23A351F7A2DE200ECC686 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,14 +559,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXSourcesBuildPhase section */
-		73D239921F7A260500ECC686 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		351081AC18FEE782619ADF47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingBlocks macOS/Pods-NetworkingBlocks macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
+		3F2AE7B0EBA0297E1F6AD167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560B679576FE960BDB490942 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingBlocks iOS/Pods-NetworkingBlocks iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A5013122C3DA2ED9658D74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE84D2B24AD6E1D51D56611 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5879B3D514DBD17A561BB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F219287070E7185282B753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		73D2399C1F7A260500ECC686 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,15 +676,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		73D239A31F7A260500ECC686 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 73D239961F7A260500ECC686 /* NetworkingBlocks */;
-			targetProxy = 73D239A21F7A260500ECC686 /* PBXContainerItemProxy */;
+		73D239B11F7A264E00ECC686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D23A291F7A29F100ECC686 /* TCResponseDeserializationOperation.m in Sources */,
+				73D239F91F7A29F100ECC686 /* TCServerResponseModel.m in Sources */,
+				73D23A2D1F7A29F100ECC686 /* TCResponseMappingOperation.m in Sources */,
+				73D23A0F1F7A29F100ECC686 /* TCResponseDeserializer.m in Sources */,
+				73D239FD1F7A29F100ECC686 /* TCCommonNetworkClient.m in Sources */,
+				73D23A091F7A29F100ECC686 /* TCJSONResponseDeserializer.m in Sources */,
+				73D23A051F7A29F100ECC686 /* TCRestRequestBuilder.m in Sources */,
+				73D23A1D1F7A29F100ECC686 /* TCCompoundOperation.m in Sources */,
+				73D23A211F7A29F100ECC686 /* TCNetworkOperation.m in Sources */,
+				73D23A151F7A29F100ECC686 /* TCCompoundOperationBuilder.m in Sources */,
+				73D23A251F7A29F100ECC686 /* TCRequestBuilderOperation.m in Sources */,
+				73D23A191F7A29F100ECC686 /* TCAsyncOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXTargetDependency section */
+		73D23A321F7A2DE200ECC686 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D23A551F7A2F8D00ECC686 /* TCServerResponseModel.m in Sources */,
+				73D23A561F7A2F8D00ECC686 /* TCCommonNetworkClient.m in Sources */,
+				73D23A571F7A2F8D00ECC686 /* TCRestRequestBuilder.m in Sources */,
+				73D23A581F7A2F8D00ECC686 /* TCJSONResponseDeserializer.m in Sources */,
+				73D23A591F7A2F8D00ECC686 /* TCResponseDeserializer.m in Sources */,
+				73D23A5A1F7A2F8D00ECC686 /* TCCompoundOperationBuilder.m in Sources */,
+				73D23A5B1F7A2F8D00ECC686 /* TCAsyncOperation.m in Sources */,
+				73D23A5C1F7A2F8D00ECC686 /* TCCompoundOperation.m in Sources */,
+				73D23A5D1F7A2F8D00ECC686 /* TCNetworkOperation.m in Sources */,
+				73D23A5E1F7A2F8D00ECC686 /* TCRequestBuilderOperation.m in Sources */,
+				73D23A5F1F7A2F8D00ECC686 /* TCResponseDeserializationOperation.m in Sources */,
+				73D23A601F7A2F8D00ECC686 /* TCResponseMappingOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		73D239A91F7A260500ECC686 /* Debug */ = {
@@ -327,52 +827,14 @@
 			};
 			name = Release;
 		};
-		73D239AC1F7A260500ECC686 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 393976W9NP;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkingBlocks/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		73D239AD1F7A260500ECC686 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 393976W9NP;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = NetworkingBlocks/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		73D239AF1F7A260500ECC686 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB05BA0E1A808A2B4B928EA /* Pods-NetworkingBlocksTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 393976W9NP;
 				INFOPLIST_FILE = NetworkingBlocksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,13 +844,107 @@
 		};
 		73D239B01F7A260500ECC686 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9647EAC50128007306933629 /* Pods-NetworkingBlocksTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 393976W9NP;
 				INFOPLIST_FILE = NetworkingBlocksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		73D239BC1F7A264E00ECC686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B7E138864E74C82FDA16D1 /* Pods-NetworkingBlocks macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 393976W9NP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "NetworkingBlocks/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
+				PRODUCT_NAME = NetworkingBlocks;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		73D239BD1F7A264E00ECC686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686C07BA5D54B66A861A1CBC /* Pods-NetworkingBlocks macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 393976W9NP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "NetworkingBlocks/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
+				PRODUCT_NAME = NetworkingBlocks;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		73D23A3D1F7A2DE200ECC686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F2B4AA10D6DD7D82AA220C /* Pods-NetworkingBlocks iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 393976W9NP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NetworkingBlocks/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
+				PRODUCT_NAME = NetworkingBlocks;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73D23A3E1F7A2DE200ECC686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF77AFC09DFBCD73C862777C /* Pods-NetworkingBlocks iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 393976W9NP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "NetworkingBlocks/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tayphoon.NetworkingBlocks;
+				PRODUCT_NAME = NetworkingBlocks;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -405,20 +961,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73D239AB1F7A260500ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				73D239AC1F7A260500ECC686 /* Debug */,
-				73D239AD1F7A260500ECC686 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		73D239AE1F7A260500ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73D239AF1F7A260500ECC686 /* Debug */,
 				73D239B01F7A260500ECC686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D239BB1F7A264E00ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D239BC1F7A264E00ECC686 /* Debug */,
+				73D239BD1F7A264E00ECC686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D23A3C1F7A2DE200ECC686 /* Build configuration list for PBXNativeTarget "NetworkingBlocks iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D23A3D1F7A2DE200ECC686 /* Debug */,
+				73D23A3E1F7A2DE200ECC686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

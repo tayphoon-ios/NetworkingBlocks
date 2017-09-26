@@ -1,0 +1,52 @@
+PODS:
+  - Expecta (1.0.6)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - OCMock (3.4)
+
+DEPENDENCIES:
+  - Expecta
+  - libextobjc (~> 0.4)
+  - OCMock
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
+
+PODFILE CHECKSUM: 42d2e526884a60d21f203a570d80654b50a9bbb5
+
+COCOAPODS: 1.2.1
