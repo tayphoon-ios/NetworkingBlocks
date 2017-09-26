@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'OperationBuilders'
 
   s.subspec 'Operations' do |operations|
-    operations.public_header_files = 'NetworkingBlocks/TCNetworkingBlocks.h', 'NetworkingBlocks/Operations/**/*.{h}'
+    operations.public_header_files = 'NetworkingBlocks/NetworkingBlocks.h', 'NetworkingBlocks/Operations/**/*.{h}'
     operations.source_files = 'NetworkingBlocks/Operations/**/*.{h,m}'
 
     operations.dependency 'NetworkingBlocks/CoreComponents'
