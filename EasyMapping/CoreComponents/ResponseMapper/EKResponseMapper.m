@@ -10,6 +10,7 @@
 
 #import "EKResponseMapper.h"
 #import "EKManagedObjectMapping.h"
+#import "EKObjectMappingProvider.h"
 
 @interface EKResponseMapper()
 
