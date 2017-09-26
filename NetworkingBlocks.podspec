@@ -29,14 +29,13 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
-  s.default_subspecs = 'Operations'
+  s.default_subspecs = 'OperationBuilders'
 
   s.subspec 'Operations' do |operations|
     operations.public_header_files = 'NetworkingBlocks/TCNetworkingBlocks.h', 'NetworkingBlocks/Operations/**/*.{h}'
     operations.source_files = 'NetworkingBlocks/Operations/**/*.{h,m}'
 
     operations.dependency 'NetworkingBlocks/CoreComponents'
-    operations.dependency 'NetworkingBlocks/OperationBuilders'
     operations.dependency 'NetworkingBlocks/Protocols'
     operations.dependency 'libextobjc', '~> 0.4'
   end
