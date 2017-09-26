@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
     operations.source_files = 'NetworkingBlocks/Operations/**/*.{h,m}'
 
     operations.dependency 'NetworkingBlocks/CoreComponents'
+    operations.dependency 'NetworkingBlocks/OperationBuilders'
     operations.dependency 'NetworkingBlocks/Protocols'
     operations.dependency 'libextobjc', '~> 0.4'
   end
