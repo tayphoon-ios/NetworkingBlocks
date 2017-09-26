@@ -65,4 +65,11 @@ Pod::Spec.new do |s|
     afnetworking.dependency 'AFNetworking', '~> 3.1.0'
   end
 
+  s.subspec 'EasyMapping' do |easymapping|
+    easymapping.public_header_files = 'EasyMapping/CoreComponents/**/*.{h}'
+    easymapping.source_files = 'EasyMapping/CoreComponents/**/*.{h,m}'
+    easymapping.dependency 'NetworkingBlocks/CoreComponents'
+    easymapping.dependency 'EasyMapping', '~> 0.21.2'
+  end
+
 end

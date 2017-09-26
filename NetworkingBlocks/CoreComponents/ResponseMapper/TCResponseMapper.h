@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TCMappingConstants.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
