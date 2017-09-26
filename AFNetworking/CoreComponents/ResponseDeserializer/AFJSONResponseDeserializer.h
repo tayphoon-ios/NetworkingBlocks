@@ -8,14 +8,14 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-#import "TCResponseDeserializer.h"
+#import "TCResponseDeserialization.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  @abstract This implementation of the `TCResponseDeserialization` protocol is responsible for deserializing json-reponses from the remote server.
  */
-@interface AFJSONResponseDeserializer : AFJSONResponseSerializer<TCResponseDeserializer>
+@interface AFJSONResponseDeserializer : AFJSONResponseSerializer<TCResponseDeserialization>
 
 @end
 

@@ -224,8 +224,8 @@
 		73D239C71F7A29F100ECC686 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
-				73D239C81F7A29F100ECC686 /* NetworkClients */,
 				73D239CF1F7A29F100ECC686 /* RequestBuilder */,
+				73D239C81F7A29F100ECC686 /* NetworkClients */,
 				73D239D31F7A29F100ECC686 /* ResponseDeserializer */,
 				73D239D91F7A29F100ECC686 /* ResponseMapper */,
 			);
