@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class EKManagedObjectMapping;
+@class EKObjectMapping;
 
 /**
  @abstract  This class is used for storing EasyMapping mappings for all of NSObjects
@@ -22,9 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param objectClass The class for mapping
  
- @return EKManagedObjectMapping object
+ @return EKObjectMapping object
  */
-- (EKManagedObjectMapping*)mappingForObjectClass:(Class)objectClass;
+- (EKObjectMapping*)mappingForObjectClass:(Class)objectClass;
 
 @end
 

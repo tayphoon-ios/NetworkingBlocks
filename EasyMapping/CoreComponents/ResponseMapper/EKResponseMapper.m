@@ -9,7 +9,6 @@
 #import <EasyMapping/EasyMapping.h>
 
 #import "EKResponseMapper.h"
-#import "EKManagedObjectMapping.h"
 #import "EKObjectMappingProvider.h"
 
 @interface EKResponseMapper()
@@ -31,7 +30,7 @@
 - (id)mapServerResponse:(id)response
      withMappingContext:(NSDictionary*)context
                   error:(NSError **)error {
-    EKManagedObjectMapping * mapping = [self retreiveMappingForMappingContext:context];
+    EKObjectMapping * mapping = [self retreiveMappingForMappingContext:context];
     
     id result = [EKMapper objectFromExternalRepresentation:response
                                                withMapping:mapping];
@@ -41,9 +40,9 @@
 
 #pragma mark - Private methods
 
-- (EKManagedObjectMapping*)retreiveMappingForMappingContext:(NSDictionary*)mappingContext {
+- (EKObjectMapping*)retreiveMappingForMappingContext:(NSDictionary*)mappingContext {
     Class objectClass = NSClassFromString(mappingContext[TCMappingContextModelClassKey]);
-    EKManagedObjectMapping * mapping = [self.mappingProvider mappingForObjectClass:objectClass];
+    EKObjectMapping * mapping = [self.mappingProvider mappingForObjectClass:objectClass];
     return mapping;
 }
 

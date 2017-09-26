@@ -12,7 +12,7 @@
 
 @implementation EKObjectMappingProviderBase
 
-- (EKManagedObjectMapping*)mappingForObjectClass:(Class)objectClass {
+- (EKObjectMapping*)mappingForObjectClass:(Class)objectClass {
     if ([objectClass conformsToProtocol:@protocol(EKMappingProtocol)]) {
         return [((id<EKMappingProtocol>)objectClass) objectMapping];
     }
