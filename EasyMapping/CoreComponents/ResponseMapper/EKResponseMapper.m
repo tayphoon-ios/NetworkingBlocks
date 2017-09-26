@@ -42,7 +42,7 @@
 #pragma mark - Private methods
 
 - (EKManagedObjectMapping*)retreiveMappingForMappingContext:(NSDictionary*)mappingContext {
-    Class managedObjectClass = NSClassFromString(mappingContext[TCMappingContextModelClassKey]);
+    Class objectClass = NSClassFromString(mappingContext[TCMappingContextModelClassKey]);
     EKManagedObjectMapping * mapping = [self.mappingProvider mappingForObjectClass:objectClass];
     return mapping;
 }
