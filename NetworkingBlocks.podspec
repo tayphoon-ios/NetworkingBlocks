@@ -28,11 +28,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
   s.requires_arc = true
-
   s.default_subspecs = 'OperationBuilders'
+  s.public_header_files = 'NetworkingBlocks/NetworkingBlocks.h'
+  s.source_files = 'NetworkingBlocks/NetworkingBlocks.h'
 
   s.subspec 'Operations' do |operations|
-    operations.public_header_files = 'NetworkingBlocks/Supporting Files/NetworkingBlocks.h', 'NetworkingBlocks/Operations/**/*.{h}'
+    operations.public_header_files = 'NetworkingBlocks/Operations/**/*.{h}'
     operations.source_files = 'NetworkingBlocks/Operations/**/*.{h,m}'
 
     operations.dependency 'NetworkingBlocks/CoreComponents'

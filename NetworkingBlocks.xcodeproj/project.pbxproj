@@ -41,8 +41,6 @@
 		73D23A2B1F7A29F100ECC686 /* TCResponseMappingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239EE1F7A29F100ECC686 /* TCResponseMappingOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D23A2D1F7A29F100ECC686 /* TCResponseMappingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */; };
 		73D23A2E1F7A2AC300ECC686 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D239A71F7A260500ECC686 /* Info.plist */; };
-		73D23A301F7A2C2000ECC686 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73D23A3F1F7A2E3500ECC686 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D23A401F7A2EB800ECC686 /* TCServerResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CA1F7A29F100ECC686 /* TCServerResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D23A411F7A2EB800ECC686 /* TCCommonNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CC1F7A29F100ECC686 /* TCCommonNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D23A421F7A2EB800ECC686 /* TCNetworkClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239CE1F7A29F100ECC686 /* TCNetworkClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,6 +73,8 @@
 		73D23A5E1F7A2F8D00ECC686 /* TCRequestBuilderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239E91F7A29F100ECC686 /* TCRequestBuilderOperation.m */; };
 		73D23A5F1F7A2F8D00ECC686 /* TCResponseDeserializationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EC1F7A29F100ECC686 /* TCResponseDeserializationOperation.m */; };
 		73D23A601F7A2F8D00ECC686 /* TCResponseMappingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */; };
+		73FC2F031F7AE803006E9A29 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73FC2F021F7AE803006E9A29 /* NetworkingBlocks.h */; };
+		73FC2F041F7AE803006E9A29 /* NetworkingBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 73FC2F021F7AE803006E9A29 /* NetworkingBlocks.h */; };
 		A5F987BBED792D2C7FC813BF /* Pods_NetworkingBlocks_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,7 +89,6 @@
 		73D239A71F7A260500ECC686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73D239B61F7A264E00ECC686 /* NetworkingBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D239BF1F7A29B500ECC686 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingBlocks.h; sourceTree = "<group>"; };
 		73D239C41F7A29F100ECC686 /* TCChainableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperation.h; sourceTree = "<group>"; };
 		73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperationDelegate.h; sourceTree = "<group>"; };
 		73D239C61F7A29F100ECC686 /* TCChainableOperationOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChainableOperationOutput.h; sourceTree = "<group>"; };
@@ -125,6 +124,7 @@
 		73D23A541F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NetworkingBlocks_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FC2EFC1F7AE16F006E9A29 /* AFJSONResponseDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJSONResponseDeserializer.h; sourceTree = "<group>"; };
 		73FC2EFD1F7AE16F006E9A29 /* AFJSONResponseDeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJSONResponseDeserializer.m; sourceTree = "<group>"; };
+		73FC2F021F7AE803006E9A29 /* NetworkingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingBlocks.h; sourceTree = "<group>"; };
 		9647EAC50128007306933629 /* Pods-NetworkingBlocksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBlocks_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF77AFC09DFBCD73C862777C /* Pods-NetworkingBlocks iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks iOS/Pods-NetworkingBlocks iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 				73D239DE1F7A29F100ECC686 /* Operations */,
 				73D239C31F7A29F100ECC686 /* Protocols */,
 				73D239BE1F7A299500ECC686 /* Supporting Files */,
+				73FC2F021F7AE803006E9A29 /* NetworkingBlocks.h */,
 			);
 			path = NetworkingBlocks;
 			sourceTree = "<group>";
@@ -206,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				73D239BF1F7A29B500ECC686 /* Info.plist */,
-				73D239C01F7A29B500ECC686 /* NetworkingBlocks.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -416,8 +416,8 @@
 				73D23A0D1F7A29F100ECC686 /* TCResponseDeserializer.h in Headers */,
 				73D23A031F7A29F100ECC686 /* TCRestRequestBuilder.h in Headers */,
 				73D23A2B1F7A29F100ECC686 /* TCResponseMappingOperation.h in Headers */,
+				73FC2F041F7AE803006E9A29 /* NetworkingBlocks.h in Headers */,
 				73D239F51F7A29F100ECC686 /* TCChainableOperationOutput.h in Headers */,
-				73D23A301F7A2C2000ECC686 /* NetworkingBlocks.h in Headers */,
 				73D23A271F7A29F100ECC686 /* TCResponseDeserializationOperation.h in Headers */,
 				73D239FF1F7A29F100ECC686 /* TCNetworkClient.h in Headers */,
 				73D239F31F7A29F100ECC686 /* TCChainableOperationDelegate.h in Headers */,
@@ -433,7 +433,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D23A3F1F7A2E3500ECC686 /* NetworkingBlocks.h in Headers */,
 				73D23A401F7A2EB800ECC686 /* TCServerResponseModel.h in Headers */,
 				73D23A411F7A2EB800ECC686 /* TCCommonNetworkClient.h in Headers */,
 				73D23A421F7A2EB800ECC686 /* TCNetworkClient.h in Headers */,
@@ -444,6 +443,7 @@
 				73D23A471F7A2EB800ECC686 /* TCResponseDeserializer.h in Headers */,
 				73D23A481F7A2EB800ECC686 /* TCResponseMapper.h in Headers */,
 				73D23A491F7A2EB800ECC686 /* TCCompoundOperationBuilder.h in Headers */,
+				73FC2F031F7AE803006E9A29 /* NetworkingBlocks.h in Headers */,
 				73D23A4A1F7A2EB800ECC686 /* TCAsyncOperation.h in Headers */,
 				73D23A4B1F7A2EB800ECC686 /* TCCompoundOperation.h in Headers */,
 				73D23A4C1F7A2EB800ECC686 /* TCNetworkOperation.h in Headers */,
