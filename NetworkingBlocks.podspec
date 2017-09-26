@@ -58,4 +58,11 @@ Pod::Spec.new do |s|
     protocols.source_files = 'NetworkingBlocks/Protocols/**/*.{h,m}'
   end
 
+  s.subspec 'AFNetworking' do |ccomponents|
+    ccomponents.public_header_files = 'AFNetworking/CoreComponents/**/*.{h}'
+    ccomponents.source_files = 'AFNetworking/CoreComponents/**/*.{h,m}'
+    operations.dependency 'NetworkingBlocks/CoreComponents'
+    operations.dependency 'AFNetworking', '~> 2.6'
+  end
+
 end

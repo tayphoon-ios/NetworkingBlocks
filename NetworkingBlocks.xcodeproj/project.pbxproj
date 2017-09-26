@@ -123,6 +123,8 @@
 		73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResponseMappingOperation.m; sourceTree = "<group>"; };
 		73D23A371F7A2DE200ECC686 /* NetworkingBlocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingBlocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D23A541F7A2F1F00ECC686 /* Pods_NetworkingBlocks_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_NetworkingBlocks_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FC2EFC1F7AE16F006E9A29 /* AFJSONResponseDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFJSONResponseDeserializer.h; sourceTree = "<group>"; };
+		73FC2EFD1F7AE16F006E9A29 /* AFJSONResponseDeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFJSONResponseDeserializer.m; sourceTree = "<group>"; };
 		9647EAC50128007306933629 /* Pods-NetworkingBlocksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocksTests/Pods-NetworkingBlocksTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F871D494B8B1B2C5DC3D18D /* Pods_NetworkingBlocks_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingBlocks_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF77AFC09DFBCD73C862777C /* Pods-NetworkingBlocks iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingBlocks iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkingBlocks iOS/Pods-NetworkingBlocks iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				73D239991F7A260500ECC686 /* NetworkingBlocks */,
+				73FC2EF91F7AE109006E9A29 /* AFNetworking */,
 				73D239A41F7A260500ECC686 /* NetworkingBlocksTests */,
 				73D239981F7A260500ECC686 /* Products */,
 				D3E79D06FCF5B71EAA0C81A4 /* Pods */,
@@ -345,6 +348,31 @@
 				73D239EF1F7A29F100ECC686 /* TCResponseMappingOperation.m */,
 			);
 			path = ResponseMappingOperation;
+			sourceTree = "<group>";
+		};
+		73FC2EF91F7AE109006E9A29 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				73FC2EFA1F7AE124006E9A29 /* CoreComponents */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		73FC2EFA1F7AE124006E9A29 /* CoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				73FC2EFB1F7AE139006E9A29 /* ResponseDeserializer */,
+			);
+			path = CoreComponents;
+			sourceTree = "<group>";
+		};
+		73FC2EFB1F7AE139006E9A29 /* ResponseDeserializer */ = {
+			isa = PBXGroup;
+			children = (
+				73FC2EFC1F7AE16F006E9A29 /* AFJSONResponseDeserializer.h */,
+				73FC2EFD1F7AE16F006E9A29 /* AFJSONResponseDeserializer.m */,
+			);
+			path = ResponseDeserializer;
 			sourceTree = "<group>";
 		};
 		D3E79D06FCF5B71EAA0C81A4 /* Pods */ = {
@@ -632,7 +660,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CC5879B3D514DBD17A561BB7 /* [CP] Check Pods Manifest.lock */ = {
@@ -647,7 +675,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D8F219287070E7185282B753 /* [CP] Check Pods Manifest.lock */ = {
@@ -662,7 +690,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
