@@ -10,10 +10,14 @@
 		665C69518337AA929FCF80D5 /* Pods_NetworkingBlocksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 082B97F3935AFA76E921DF29 /* Pods_NetworkingBlocksTests.framework */; };
 		7316531D1F7FB2B10079C70E /* TCBaseAuthorizationRequestSinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7316531B1F7FB27B0079C70E /* TCBaseAuthorizationRequestSinger.m */; };
 		7316531E1F7FB2B20079C70E /* TCBaseAuthorizationRequestSinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7316531B1F7FB27B0079C70E /* TCBaseAuthorizationRequestSinger.m */; };
-		731653221F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 731653201F7FB3AF0079C70E /* TCRequestSignerOperation.h */; };
-		731653231F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 731653201F7FB3AF0079C70E /* TCRequestSignerOperation.h */; };
+		731653221F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 731653201F7FB3AF0079C70E /* TCRequestSignerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		731653231F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 731653201F7FB3AF0079C70E /* TCRequestSignerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		731653241F7FB3AF0079C70E /* TCRequestSignerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 731653211F7FB3AF0079C70E /* TCRequestSignerOperation.m */; };
 		731653251F7FB3AF0079C70E /* TCRequestSignerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 731653211F7FB3AF0079C70E /* TCRequestSignerOperation.m */; };
+		7340D8951F801759006C0934 /* TCBaseAuthorizationRequestSinger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7316531A1F7FB27B0079C70E /* TCBaseAuthorizationRequestSinger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7340D8961F801761006C0934 /* TCBaseAuthorizationRequestSinger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7316531A1F7FB27B0079C70E /* TCBaseAuthorizationRequestSinger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7340D8971F8017A9006C0934 /* TCRequestSigner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7316531C1F7FB27B0079C70E /* TCRequestSigner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7340D8981F8017B3006C0934 /* TCRequestSigner.h in Headers */ = {isa = PBXBuildFile; fileRef = 7316531C1F7FB27B0079C70E /* TCRequestSigner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D239A61F7A260500ECC686 /* NetworkingBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D239A51F7A260500ECC686 /* NetworkingBlocksTests.m */; };
 		73D239F11F7A29F100ECC686 /* TCChainableOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C41F7A29F100ECC686 /* TCChainableOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73D239F31F7A29F100ECC686 /* TCChainableOperationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D239C51F7A29F100ECC686 /* TCChainableOperationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -489,7 +493,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D23A0B1F7A29F100ECC686 /* TCResponseDeserialization.h in Headers */,
-				731653231F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */,
 				73D23A071F7A29F100ECC686 /* TCJSONResponseDeserializer.h in Headers */,
 				73D23A231F7A29F100ECC686 /* TCRequestBuilderOperation.h in Headers */,
 				73D23A011F7A29F100ECC686 /* TCRequestBuilder.h in Headers */,
@@ -508,8 +511,11 @@
 				73D239F11F7A29F100ECC686 /* TCChainableOperation.h in Headers */,
 				73D239F71F7A29F100ECC686 /* TCServerResponseModel.h in Headers */,
 				73FC2F041F7AE803006E9A29 /* NetworkingBlocks.h in Headers */,
+				731653231F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */,
 				73FC2F111F7AF674006E9A29 /* TCMappingConstants.h in Headers */,
+				7340D8951F801759006C0934 /* TCBaseAuthorizationRequestSinger.h in Headers */,
 				73D239FB1F7A29F100ECC686 /* TCCommonNetworkClient.h in Headers */,
+				7340D8981F8017B3006C0934 /* TCRequestSigner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +524,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D23A401F7A2EB800ECC686 /* TCServerResponseModel.h in Headers */,
-				731653221F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */,
 				73D23A411F7A2EB800ECC686 /* TCCommonNetworkClient.h in Headers */,
 				73D23A421F7A2EB800ECC686 /* TCNetworkClient.h in Headers */,
 				73D23A431F7A2EB800ECC686 /* TCRequestBuilder.h in Headers */,
@@ -538,7 +543,10 @@
 				73D23A511F7A2EB800ECC686 /* TCChainableOperationDelegate.h in Headers */,
 				73FC2F031F7AE803006E9A29 /* NetworkingBlocks.h in Headers */,
 				73FC2F101F7AF674006E9A29 /* TCMappingConstants.h in Headers */,
+				731653221F7FB3AF0079C70E /* TCRequestSignerOperation.h in Headers */,
+				7340D8961F801761006C0934 /* TCBaseAuthorizationRequestSinger.h in Headers */,
 				73D23A521F7A2EB800ECC686 /* TCChainableOperationOutput.h in Headers */,
+				7340D8971F8017A9006C0934 /* TCRequestSigner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
