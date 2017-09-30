@@ -1,6 +1,6 @@
 //
 //  TCCompoundOperationBuilder.h
-//  TCNetworkingBlocks
+//  NetworkingBlocks
 //
 //  Created by Tayphoon on 24/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.

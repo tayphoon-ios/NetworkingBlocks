@@ -1,6 +1,6 @@
 //
 //  TCRequestBuilderOperation.m
-//  TCNetworkingBlocks
+//  NetworkingBlocks
 //
 //  Created by Tayphoon on 23/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.
@@ -69,7 +69,7 @@
 
 #pragma mark - Private methods
 
-- (void)completeOperationWithData:(id)data error:(NSError *)error {
+- (void)completeOperationWithData:(id)data error:(NSError*)error {
     if (data) {
         [self.output didCompleteChainableOperationWithOutputData:data];
     }

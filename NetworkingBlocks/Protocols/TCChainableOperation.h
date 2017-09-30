@@ -1,6 +1,6 @@
 //
 //  TCChainableOperation.h
-//  TCNetworkingBlocks
+//  NetworkingBlocks
 //
 //  Created by Tayphoon on 23/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.

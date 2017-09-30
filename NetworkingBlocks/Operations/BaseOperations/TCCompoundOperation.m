@@ -1,6 +1,6 @@
 //
 //  TCCompoundOperation.m
-//  TCNetworkingBlocks
+//  NetworkingBlocks
 //
 //  Created by Tayphoon on 23/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.
@@ -23,7 +23,7 @@ NSUInteger const TCDefaultMaxConcurrentOperationsCount = 3;
     self = [super init];
     if (self) {
         _queue = [[NSOperationQueue alloc] init];
-        _queue.name = [NSString stringWithFormat:@"ru.TCNetworkingBlocks.%@-%@.queue", NSStringFromClass([self class]), [[NSUUID UUID] UUIDString]];
+        _queue.name = [NSString stringWithFormat:@"ru.NetworkingBlocks.%@-%@.queue", NSStringFromClass([self class]), [[NSUUID UUID] UUIDString]];
         _queue.maxConcurrentOperationCount = _maxConcurrentOperationsCount > 0 ?: TCDefaultMaxConcurrentOperationsCount;
         
         [_queue setSuspended:YES];

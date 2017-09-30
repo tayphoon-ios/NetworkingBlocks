@@ -1,35 +1,33 @@
 //
-//  TCNetworkOperation.m
+//  TCRequestSignerOperation.m
 //  NetworkingBlocks
 //
-//  Created by Tayphoon on 23/09/2017.
+//  Created by Tayphoon on 30/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.
 //
 
-#import <libextobjc/EXTScope.h>
+#import "TCRequestSignerOperation.h"
+#import "TCRequestSigner.h"
 
-#import "TCNetworkOperation.h"
-#import "TCNetworkClient.h"
+@interface TCRequestSignerOperation()
 
-@interface TCNetworkOperation()
-
-@property (nonatomic, strong) id<TCNetworkClient> networkClient;
+@property (nonatomic, strong) id<TCRequestSigner> requestSigner;
 @property (nonatomic, strong) NSURLRequest * request;
 @property (nonatomic, readwrite) id resultData;
 @property (nonatomic, readwrite) NSError * error;
 
 @end
 
-@implementation TCNetworkOperation
+@implementation TCRequestSignerOperation
 
-+ (instancetype)operationWithNetworkClient:(id<TCNetworkClient>)networkClient {
-    return [[[self class] alloc] initWithNetworkClient:networkClient];
++ (instancetype)operationWithRequestSigner:(id<TCRequestSigner>)requestSigner {
+    return [[[self class] alloc] initWithRequestSigner:requestSigner];
 }
 
-- (instancetype)initWithNetworkClient:(id<TCNetworkClient>)networkClient {
+- (instancetype)initWithRequestSigner:(id<TCRequestSigner>)requestSigner {
     self = [super init];
     if (self) {
-        _networkClient = networkClient;
+        _requestSigner = requestSigner;
     }
     return self;
 }
@@ -37,12 +35,9 @@
 #pragma mark - Operation execution
 
 - (void)main {
-    @weakify(self);
-    [self.networkClient sendRequest:self.request completion:^(TCServerResponseModel * responseModel, NSError * error) {
-        @strongify(self);
-        
-        [self completeOperationWithData:responseModel error:error];
-    }];
+    NSURLRequest * request = [self.requestSigner signRequest:self.request];
+    
+    [self completeOperationWithData:request error:nil];
 }
 
 #pragma mark - TCChainableOperationOutput
@@ -56,10 +51,7 @@
 #pragma mark - Private methods
 
 - (void)completeOperationWithData:(id)data error:(NSError*)error {
-    self.resultData = data;
-    self.error = error;
-    
-   if (data) {
+    if (data) {
         [self.output didCompleteChainableOperationWithOutputData:data];
     }
     

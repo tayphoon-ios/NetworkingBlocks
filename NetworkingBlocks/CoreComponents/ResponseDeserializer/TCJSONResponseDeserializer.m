@@ -1,6 +1,6 @@
 //
 //  TCJSONResponseDeserializer.m
-//  TCNetworkingBlocks
+//  NetworkingBlocks
 //
 //  Created by Tayphoon on 25/09/2017.
 //  Copyright © 2017 Tayphoon. All rights reserved.
@@ -31,8 +31,8 @@
             }
         } else {
             NSDictionary *userInfo = @{
-                                       NSLocalizedDescriptionKey: NSLocalizedStringFromTable(@"Data failed decoding as a UTF-8 string", @"TCNetworkingBlocks", nil),
-                                       NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedStringFromTable(@"Could not decode string: %@", @"TCNetworkingBlocks", nil), responseString]
+                                       NSLocalizedDescriptionKey: NSLocalizedStringFromTable(@"Data failed decoding as a UTF-8 string", @"NetworkingBlocks", nil),
+                                       NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedStringFromTable(@"Could not decode string: %@", @"NetworkingBlocks", nil), responseString]
                                        };
             
             serializationError = [NSError errorWithDomain:TCResponseSerializationErrorDomain
