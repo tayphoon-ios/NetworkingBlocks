@@ -35,9 +35,16 @@
                 serverResponse = (NSHTTPURLResponse*)response;
             }
             
-            TCServerResponseModel * responseModel = [[TCServerResponseModel alloc] initWithResponse:serverResponse
-                                                                                               data:data];
-            completion(responseModel, error);
+        
+            TCServerResponseModel * responseModel;
+            if(response || data) {
+                responseModel = [[TCServerResponseModel alloc] initWithResponse:serverResponse
+                                                                           data:data];
+            }
+            
+            if(completion) {
+                completion(responseModel, error);
+            }
         }
     }];
     
