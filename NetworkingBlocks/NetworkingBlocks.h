@@ -25,6 +25,7 @@ FOUNDATION_EXPORT const unsigned char NetworkingBlocksVersionString[];
 #import "TCNetworkOperation.h"
 #import "TCJSONResponseDeserializer.h"
 #import "TCRequestSigner.h"
+#import "TCRequestSignerOperation.h"
 #import "TCResponseMappingOperation.h"
 #import "TCRequestBuilder.h"
 #import "TCNetworkClient.h"
