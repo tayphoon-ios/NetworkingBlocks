@@ -51,6 +51,9 @@
         operation.delegate = compoundOperation;
     }
     
+    NSOperation<TCChainableOperation> * lastOperation = [self.operations lastObject];
+    lastOperation.output = compoundOperation;
+    
     return compoundOperation;
 }
 

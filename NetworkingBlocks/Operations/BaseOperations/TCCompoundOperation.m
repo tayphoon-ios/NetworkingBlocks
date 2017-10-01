@@ -50,7 +50,9 @@ NSUInteger const TCDefaultMaxConcurrentOperationsCount = 3;
 #pragma mark - Protocol ChainableOperationDelegate
 
 - (void)didCompleteChainableOperationWithError:(NSError*)error {
-    [self completeOperationWithData:nil error:error];
+    if(error) {
+        [self completeOperationWithData:nil error:error];
+    }
 }
 
 - (void)didCompleteChainableOperationWithOutputData:(id)outputData {
