@@ -41,7 +41,7 @@
 #pragma mark - Private methods
 
 - (EKObjectMapping*)retreiveMappingForMappingContext:(NSDictionary*)mappingContext {
-    Class objectClass = NSClassFromString(mappingContext[TCMappingContextModelClassKey]);
+    Class objectClass = mappingContext[TCMappingContextModelClassKey];
     EKObjectMapping * mapping = [self.mappingProvider mappingForObjectClass:objectClass];
     return mapping;
 }
